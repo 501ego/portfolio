@@ -7,16 +7,18 @@ import {
   Link,
   Switch,
 } from '@nextui-org/react'
-
-import { MoonIcon, SunIcon } from '../../public/icons'
+import { GithubIcon, LinkedinIcon } from '../../public/icons'
+import { MoonIcon, SunIcon, LaptopIcon } from '../../public/icons'
 
 export default function Nav() {
   return (
     <Navbar shouldHideOnScroll className="px-4 items-center justify-between">
       <NavbarBrand>
-        <p className="font-bold text-inherit text-rose-300 fixed text-lg">
-          PORTFOLIO
-        </p>
+        <div className="font-bold text-inherit text-rose-300 fixed text-lg">
+          <p className="flex flex-row gap-1">
+            <LaptopIcon /> DIEGO
+          </p>
+        </div>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4 py-2">
         <NavbarItem className="hover:text-indigo-300">
@@ -36,9 +38,15 @@ export default function Nav() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent>
-        <NavbarItem>
+        <NavbarItem className="flex-row flex gap-5 justify-center mt-4 cursor-pointer">
+          <a>
+            <GithubIcon />
+          </a>
+          <a className="text-blue-400">
+            <LinkedinIcon />
+          </a>
           <Switch
-            className="text-indigo-200 cursor-pointer text-xl"
+            className="text-indigo-200 cursor-pointer"
             defaultSelected
             size="lg"
             color="secondary"
