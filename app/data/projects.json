@@ -1,0 +1,59 @@
+{"projects" : [
+  {
+    "name": "Libgen Project",
+    "images": [
+      "./projects/libgenss.webp",
+      "./projects/libgenss2.webp",
+      "./projects/libgenss3.webp"
+    ],
+    "icons" : [
+      "NodeJsIcon",
+      "JavaScriptIcon",
+      "ReactIcon",
+      "ExpressIcon",
+      "TailwindCSSIcon"
+    ],
+    "url": "https://ddaudalagid5012.netlify.app/",
+    "gitHub": "https://github.com/501ego/libgen",
+    "Description":
+      "This project is a web application that combines the LibGen and Google Books APIs to provide a unique and comprehensive book search service. Users can search for books by title, author, or category and get a list of results that include detailed book information, including a link to download the book via LibGen. The integration of these two APIs enables access to an extensive collection of literary resources, ranging from contemporary works to timeless classics. Whether looking for academic materials, novels, or specialized texts, users will find this platform invaluable for its ease of use and accessibility."
+  },
+  {
+    "name": "Recipe generator",
+    "images": [
+      "./projects/recipess.webp",
+      "./projects/recipess2.webp",
+      "./projects/recipess3.webp"
+    ],
+    "icons" : [
+      "JavaScriptIcon",
+      "ReactIcon",
+      "NextJsIcon",
+      "TailwindCSSIcon",
+      "MongoDBIcon"
+    ],
+    "url": "https://recipes-generator-ten.vercel.app/",
+    "gitHub": "https://github.com/501ego/recipes-generator",
+    "Description":
+      "Web application project using Next.js to create vegan recipes. It was made using React, Next.js, and TailwindCSS, forming a streamlined and visually appealing interface. Deployed through Vercel SDK, it leverages modern hosting and continuous integration tools to ensure robust performance. The application integrates with a MongoDB database, allowing for flexible data management and real-time updates to the recipe collection. This project served as a proof of concept demonstrating the feasibility and efficiency of using these technologies together."
+  },
+  {
+    "name": "Point of Sale",
+    "images": [
+      "./projects/posss.webp",
+      "./projects/posss2.webp",
+      "./projects/posss3.webp"
+    ],
+    "icons" : [
+      "PythonIcon",
+      "DjangoIcon",
+      "PostgreSQLIcon",
+      "TailwindCSSIcon"
+    ],
+    "url": null,
+    "gitHub": "https://github.com/501ego/proyecto/tree/main",
+    "Description":
+      "Web application project using Next.js to create vegan recipes. It was made using React, Next.js, and TailwindCSS, forming a streamlined and visually appealing interface. Deployed through Vercel SDK, it leverages modern hosting and continuous integration tools to ensure robust performance. The application integrates with a MongoDB database, allowing for flexible data management and real-time updates to the recipe collection. This project served as a proof of concept demonstrating the feasibility and efficiency of using these technologies together."
+  }]
+
+}
