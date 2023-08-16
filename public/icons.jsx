@@ -136,7 +136,7 @@ export const ReactIcon = () => (
 export const AWSIcon = () => (
   <svg
     stroke="currentColor"
-    fill="currentColor"
+    fill="#ca8a04"
     strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
@@ -195,7 +195,7 @@ export const MongoDBIcon = () => (
 export const MySqlIcon = () => (
   <svg
     stroke="currentColor"
-    fill="currentColor"
+    fill="#0c4a6e"
     strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"

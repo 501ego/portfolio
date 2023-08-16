@@ -7,7 +7,6 @@ import {
   Link,
   Switch,
 } from '@nextui-org/react'
-import { GithubIcon, LinkedinIcon } from '../../public/icons'
 import { MoonIcon, SunIcon, ConsoleIcon } from '../../public/icons'
 
 export default function Nav() {
@@ -17,9 +16,9 @@ export default function Nav() {
       className="px-4 h-[55px] items-center justify-between"
     >
       <NavbarBrand>
-        <div className="font-bold text-rose-300 fixed">
-          <p className="flex flex-row items-center">
-            <span className="animate-pulse">
+        <div className="text-rose-300 fixed">
+          <p className="flex flex-row items-center text-lg font-semibold">
+            <span>
               <ConsoleIcon />
             </span>
             1EGO
@@ -45,12 +44,6 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent>
         <NavbarItem className="flex-row flex gap-5 justify-center cursor-pointer">
-          <a className="hover:text-indigo-300" href="https://github.com/501ego">
-            <GithubIcon />
-          </a>
-          <a className="hover:text-blue-400">
-            <LinkedinIcon />
-          </a>
           <Switch
             className="text-indigo-400 cursor-pointer hover:text-yellow-100"
             defaultSelected

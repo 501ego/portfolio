@@ -4,6 +4,7 @@ import MainSection from './components/mainSection'
 import Nav from './components/navbar'
 import Projects from './components/projects'
 import Skills from './components/skills'
+import IconsCarousel from './components/iconsCarousel'
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
           </div>
           <div className="flex flex-row justify-center min-h-[680px] w-full">
             <Skills />
+          </div>
+          <div className="flex flex-row justify-center w-full">
+            <IconsCarousel />
           </div>
         </div>
       </main>

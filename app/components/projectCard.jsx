@@ -51,24 +51,27 @@ export const ProjectCard = ({
 
   return (
     <div className="rounded-2xl flex justify-center py-7">
-      <Card aria-label="project card" className="p-1">
+      <Card aria-label="project card">
         <CardBody aria-label="card content">
           <div className="flex flex-row flex-wrap justify-center">
             <div className="flex flex-col items-center p-2">
-              <h2 className="font-bold text-xl text-rose-100 mb-1">
-                {project.name}
-              </h2>
               <ProjectImage
                 key={currentImageIndex}
                 image={project.images[currentImageIndex]}
                 nextSlide={nextSlide}
                 prevSlide={prevSlide}
               />
-              <div className="flex flex-row gap-8 items-center justify-start mt-3">
+            </div>
+            <div className="flex flex-col justify-center">
+              <div className="flex flex-row items-center flex-wrap px-3">
+                <h2 className="font-bold text-2xl text-rose-100">
+                  {project.name}
+                </h2>
+
                 {project.gitHub ? (
                   <>
                     <a
-                      className="cursor-pointer text-rose-50 hover:text-indigo-300"
+                      className="cursor-pointer ml-1 text-rose-50 hover:text-indigo-300"
                       href={project.gitHub}
                     >
                       <GithubIcon />
@@ -78,7 +81,7 @@ export const ProjectCard = ({
                 {project.url ? (
                   <>
                     <a
-                      className="cursor-pointer text-indigo-100 hover:text-indigo-300"
+                      className="cursor-pointer ml-1 text-indigo-100 hover:text-indigo-300"
                       href={project.url}
                     >
                       <UrlIcon />
@@ -86,22 +89,9 @@ export const ProjectCard = ({
                   </>
                 ) : null}
               </div>
-            </div>
-            <div className="flex flex-col justify-end p-1">
-              <p className="text-base text-indigo-50 max-w-md px-3">
+              <p className="text-base text-indigo-100 max-w-lg px-3">
                 {project.Description}
               </p>
-              <div className="flex flex-row justify-center gap-4 mt-2 text-2xl">
-                {project.icons ? (
-                  <>
-                    {project.icons.map((icon, index) => (
-                      <React.Fragment key={index}>
-                        {renderIcon(icon)}
-                      </React.Fragment>
-                    ))}
-                  </>
-                ) : null}
-              </div>
             </div>
           </div>
         </CardBody>

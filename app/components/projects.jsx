@@ -29,8 +29,8 @@ export default function Projects() {
 
   return (
     <section aria-label="project section">
-      <h1 className="text-4xl font-bold text-center text-indigo-200 py-10">
-        - Projects -
+      <h1 className="text-4xl font-semibold text-center text-indigo-300 mt-20 mb-2">
+        Projects
       </h1>
       <article className="flex justify-center gap-6 flex-wrap">
         {projects.map((project, idx) => (

@@ -16,7 +16,7 @@
     "url": "https://ddaudalagid5012.netlify.app/",
     "gitHub": "https://github.com/501ego/libgen",
     "Description":
-      "This project is a web application that combines the LibGen and Google Books APIs to provide a unique and comprehensive book search service. Users can search for books by title, author, or category and get a list of results that include detailed book information, including a link to download the book via LibGen. The integration of these two APIs enables access to an extensive collection of literary resources, ranging from contemporary works to timeless classics. Whether looking for academic materials, novels, or specialized texts, users will find this platform invaluable for its ease of use and accessibility."
+     "Web application that combines the LibGen and Google Books APIs to provide a book search service. Users can search for books by title, author, or category and get a list of results that include detailed book information, a preview, and the possibility to obtain a link to download the book via LibGen."
   },
   {
     "name": "Recipe generator",
@@ -35,7 +35,7 @@
     "url": "https://recipes-generator-ten.vercel.app/",
     "gitHub": "https://github.com/501ego/recipes-generator",
     "Description":
-      "Web application project using Next.js to create vegan recipes. It was made using React, Next.js, and TailwindCSS, forming a streamlined and visually appealing interface. Deployed through Vercel SDK, it leverages modern hosting and continuous integration tools to ensure robust performance. The application integrates with a MongoDB database, allowing for flexible data management and real-time updates to the recipe collection. This project served as a proof of concept demonstrating the feasibility and efficiency of using these technologies together."
+      "Project designed to create vegan recipes. It was crafted using React, Next.js, and TailwindCSS, resulting in a streamlined and visually appealing interface. The application is integrated with a MongoDB database, allowing for real-time updates to add or delete from your own recipe collection."
   },
   {
     "name": "Point of Sale",
@@ -53,7 +53,7 @@
     "url": null,
     "gitHub": "https://github.com/501ego/proyecto/tree/main",
     "Description":
-      "Web application project using Next.js to create vegan recipes. It was made using React, Next.js, and TailwindCSS, forming a streamlined and visually appealing interface. Deployed through Vercel SDK, it leverages modern hosting and continuous integration tools to ensure robust performance. The application integrates with a MongoDB database, allowing for flexible data management and real-time updates to the recipe collection. This project served as a proof of concept demonstrating the feasibility and efficiency of using these technologies together."
+      "University project. It has been developed using Python and the Django framework, integrated with a solid SQL database structure in PostgreSQL. The application encompasses all the essential functions that a point of sale requires, including inventory and employee management, sales reports, employee profiles, and the ability to print receipts for every transaction or refund."
   }]
 
 }
