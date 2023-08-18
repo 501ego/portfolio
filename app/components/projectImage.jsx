@@ -2,7 +2,7 @@ import { Image } from '@nextui-org/react'
 import { LeftArrowIcon, RightArrowIcon } from '../../public/icons'
 import React, { useState } from 'react'
 
-const ProjectImage = ({ image, prevSlide, nextSlide }) => {
+const ProjectImage = ({ image, altDescription, prevSlide, nextSlide }) => {
   const [showBigImage, setShowBigImage] = useState(false)
 
   const handleClick = () => {
@@ -14,32 +14,30 @@ const ProjectImage = ({ image, prevSlide, nextSlide }) => {
   }
 
   return (
-    <div aria-label="card images" className="relative p-1 group">
+    <div role="presentation" className="relative p-1 group">
       <div
         onClick={handleClick}
-        className="cursor-pointer max-h-[200px] min-h-[188px] min-w-[196px] "
+        className="cursor-pointer max-h-[200px] min-h-[188px] min-w-[196px]"
       >
         <Image
           loading="lazy"
-          alt="Project Screenshot"
+          alt={altDescription}
           src={image}
           width={320}
           className="fadein border border-zinc-400 rounded-md min-h-[188px]"
         />
         <button
-          onClick={() => {
-            prevSlide()
-          }}
+          onClick={prevSlide}
           className="z-50 hidden group-hover:block absolute top-[50%] translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+          aria-label="Previous Slide"
         >
           <LeftArrowIcon size={30} />
         </button>
         <button
-          onClick={() => {
-            nextSlide()
-          }}
+          onClick={nextSlide}
           size={30}
           className="z-50 hidden group-hover:block absolute top-[50%] translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+          aria-label="Next Slide"
         >
           <RightArrowIcon />
         </button>
@@ -49,12 +47,13 @@ const ProjectImage = ({ image, prevSlide, nextSlide }) => {
         <div
           onClick={handleClose}
           className="fixed inset-0 col-center bg-black bg-opacity-50 z-50"
+          aria-modal="true"
         >
           <Image
             loading="lazy"
             removeWrapper
-            alt="Project Screenshot"
-            className="max-w-[calc(75dvw)] rounded-lg"
+            alt={altDescription}
+            className="max-w-[calc(75vw)] rounded-lg"
             src={image}
           />
         </div>

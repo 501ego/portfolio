@@ -36,9 +36,9 @@ export const ProjectCard = ({
   }
 
   return (
-    <section className="col-center py-7">
-      <div aria-label="project card">
-        <div aria-label="card content">
+    <article className="col-center py-7" aria-label="Project information">
+      <div className="project-card">
+        <div className="card-content">
           <div className="row-center flex-wrap">
             <div className="flex flex-col items-center p-2">
               <ProjectImage
@@ -46,69 +46,68 @@ export const ProjectCard = ({
                 image={project.images[currentImageIndex]}
                 nextSlide={nextSlide}
                 prevSlide={prevSlide}
+                alt={project.name}
               />
             </div>
             <div className="flex flex-col items-start">
-              <div className="row-center px-3 flex-wrap">
+              <header className="row-center px-3 flex-wrap">
                 <h2 className="font-bold text-2xl text-titleColor">
                   {project.name}
                 </h2>
-                {project.gitHub ? (
-                  <>
-                    <Link
-                      className="cursor-pointer ml-3 text-textPrimary hover:text-mainSubColor"
-                      href={project.gitHub}
+                {project.gitHub && (
+                  <Link
+                    aria-label="GitHub repository link"
+                    className="cursor-pointer ml-3 text-textPrimary hover:text-mainSubColor"
+                    href={project.gitHub}
+                  >
+                    <Chip
+                      startContent={<GithubIcon />}
+                      variant="flat"
+                      className="bg-chip text-textPrimary hover:text-mainSubColor"
+                      size="sm"
                     >
-                      <Chip
-                        startContent={<GithubIcon />}
-                        variant="flat"
-                        className="bg-chip text-textPrimary hover:text-mainSubColor"
-                        size="sm"
-                      >
-                        Github
-                      </Chip>
-                    </Link>
-                  </>
-                ) : null}
-                {project.url ? (
-                  <>
-                    <Link
-                      className="cursor-pointer ml-1 text-textPrimary hover:text-mainSubColor"
-                      href={project.url}
+                      Github
+                    </Chip>
+                  </Link>
+                )}
+                {project.url && (
+                  <Link
+                    aria-label="Project URL"
+                    className="cursor-pointer ml-1 text-textPrimary hover:text-mainSubColor"
+                    href={project.url}
+                  >
+                    <Chip
+                      startContent={<UrlIcon />}
+                      variant="flat"
+                      className="bg-chip text-textPrimary hover:text-mainSubColor"
+                      size="sm"
                     >
-                      <Chip
-                        startContent={<UrlIcon />}
-                        variant="flat"
-                        className="bg-chip text-textPrimary hover:text-mainSubColor"
-                        size="sm"
-                      >
-                        URL
-                      </Chip>
-                    </Link>
-                  </>
-                ) : null}
-              </div>
+                      URL
+                    </Chip>
+                  </Link>
+                )}
+              </header>
               <p className="text-base text-Primary max-w-lg px-3">
-                {project.Description}
+                {project.description}
               </p>
             </div>
           </div>
         </div>
+        <footer className="row-center gap-1 mt-1 flex-wrap">
+          {project.icons.map((iconName, index) => (
+            <Chip
+              variant="flat"
+              startContent={React.createElement(iconComponents[iconName])}
+              size="sm"
+              key={index}
+              className="bg-chip text-textPrimary"
+            >
+              {iconName}
+            </Chip>
+          ))}
+        </footer>
       </div>
-      <div className="row-center gap-1 mt-1 flex-wrap">
-        {project.icons.map((iconName, index) => (
-          <Chip
-            variant="flat"
-            startContent={React.createElement(iconComponents[iconName])}
-            size="sm"
-            key={index}
-            className="bg-chip text-textPrimary"
-          >
-            {iconName}
-          </Chip>
-        ))}
-      </div>
-    </section>
+    </article>
   )
 }
 

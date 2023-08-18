@@ -11,6 +11,7 @@ import { MoonIcon, SunIcon, ConsoleIcon } from '../../public/icons'
 import { useTheme } from 'next-themes'
 import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+
 gsap.registerPlugin(ScrollToPlugin)
 
 export default function Nav() {
@@ -35,12 +36,14 @@ export default function Nav() {
       isBlurred
       maxWidth="full"
       className="bg-zinc-900"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <NavbarBrand>
         <div className="text-mainSubColor fixed">
           <p className="row-center text-lg font-semibold">
             <span>
-              <ConsoleIcon />
+              <ConsoleIcon aria-hidden="true" />
             </span>
             1EGO
           </p>
@@ -52,6 +55,7 @@ export default function Nav() {
             onClick={event => smoothScroll(event, 'projects')}
             href="#projects"
             className="url-hover text-url hover:text-hover"
+            aria-label="Navigate to Projects"
           >
             Projects
           </a>
@@ -61,6 +65,7 @@ export default function Nav() {
             onClick={event => smoothScroll(event, 'skills')}
             href="#skills"
             className="url-hover text-url hover:text-hover"
+            aria-label="Navigate to Skills"
           >
             Skills
           </a>
@@ -70,6 +75,7 @@ export default function Nav() {
             href="#"
             aria-current="page"
             className="url-hover text-url hover:text-hover"
+            aria-label="Download Resume"
           >
             Resume
           </Link>
@@ -82,6 +88,7 @@ export default function Nav() {
           color="primary"
           checked={theme === 'light'}
           onChange={e => handleThemeChange(e.target.checked)}
+          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           thumbIcon={({ isSelected, className }) =>
             isSelected ? (
               <SunIcon className={className} />

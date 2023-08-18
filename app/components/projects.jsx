@@ -29,6 +29,9 @@ export default function Projects() {
 
   return (
     <section aria-label="project section">
+      <header>
+        <h1 className="sr-only">Projects</h1>
+      </header>
       <article className="flex justify-center gap-6 flex-wrap py-20">
         {projects.map((project, idx) => (
           <ProjectCard

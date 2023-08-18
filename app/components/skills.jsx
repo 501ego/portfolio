@@ -1,7 +1,10 @@
 export default function Skills() {
   return (
     <section aria-label="skills section" className="max-w-6xl py-10">
-      <article>
+      <header>
+        <h1 className="sr-only">Skills</h1>
+      </header>
+      <article aria-label="technical skills">
         <div
           aria-label="languages"
           className="mb-10 flex justify-center items-start flex-wrap"
