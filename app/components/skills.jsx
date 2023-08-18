@@ -11,8 +11,8 @@ export default function Skills() {
         >
           <ul className="flex flex-wrap max-w-md">
             <li className="py-5 px-5">
-              <h2 className="text-mainSubColor font-bold text-2xl flex justify-center py-2">
-                Technical Skills:
+              <h2 className="text-subtitleColor font-bold text-4xl flex justify-center py-2">
+                Technical Skills
               </h2>
               <p className="text-base text-textPrimary mdc:mb-[24px]">
                 Pursuing studies in computer engineering has engaged me in the
@@ -51,7 +51,7 @@ export default function Skills() {
           </ul>
           <ul className="flex flex-wrap max-w-md">
             <li className="py-5 px-5">
-              <h2 className="text-mainSubColor font-bold text-2xl flex justify-center py-2">
+              <h2 className="text-subtitleColor font-bold text-4xl flex justify-center py-2">
                 Soft Skills
               </h2>
               <p className="text-base text-textPrimary">

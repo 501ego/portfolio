@@ -42,14 +42,12 @@ module.exports = {
             mainSubColor: '#fda4af',
             primaryTitleColor: '#a5b4fc',
             titleColor: '#fda4af',
-            subtitleColor: '#fecdd3',
+            subtitleColor: '#a5b4fc',
             shadow: '#171717',
             chip: '#262626',
             hover: '#fda4af',
             url: '#f1f5f9',
           },
-
-          // Puedes definir layout, radius, borderWidth, etc., según sea necesario
         },
         light: {
           colors: {
@@ -58,14 +56,13 @@ module.exports = {
             textPrimary: '#18181b',
             mainSubColor: '#fb7185',
             primaryTitleColor: '#0284c7',
-            titleColor: '#111827',
-            subtitleColor: '#fda4af',
+            titleColor: '#fb7185',
+            subtitleColor: '#0284c7',
             shadow: '#262626',
             chip: 'none',
             hover: '#fda4af',
             url: '#f1f5f9',
           },
-          // Puedes definir layout, radius, borderWidth, etc., según sea necesario
         },
       },
       backdropBlur: true,
