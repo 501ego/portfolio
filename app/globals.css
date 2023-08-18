@@ -21,3 +21,19 @@
     background-size: cover;
   }
 
+  .component-container {
+    @apply flex flex-row justify-center;
+    @apply min-h-[680px] w-full;
+  }
+
+  .url-hover {
+    @apply hover:text-hover hover:border-b-2 hover:border-hover;
+  }
+
+  .row-center {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }

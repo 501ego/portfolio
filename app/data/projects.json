@@ -7,11 +7,11 @@
       "./projects/libgenss3.webp"
     ],
     "icons" : [
-      "NodeJsIcon",
-      "JavaScriptIcon",
-      "ReactIcon",
-      "ExpressIcon",
-      "TailwindCSSIcon"
+      "NodeJs",
+      "JavaScript",
+      "React",
+      "Express",
+      "TailwindCSS"
     ],
     "url": "https://ddaudalagid5012.netlify.app/",
     "gitHub": "https://github.com/501ego/libgen",
@@ -26,11 +26,11 @@
       "./projects/recipess3.webp"
     ],
     "icons" : [
-      "JavaScriptIcon",
-      "ReactIcon",
-      "NextJsIcon",
-      "TailwindCSSIcon",
-      "MongoDBIcon"
+      "JavaScript",
+      "React",
+      "NextJs",
+      "TailwindCSS",
+      "MongoDB"
     ],
     "url": "https://recipes-generator-ten.vercel.app/",
     "gitHub": "https://github.com/501ego/recipes-generator",
@@ -45,10 +45,10 @@
       "./projects/posss3.webp"
     ],
     "icons" : [
-      "PythonIcon",
-      "DjangoIcon",
-      "PostgreSQLIcon",
-      "TailwindCSSIcon"
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "TailwindCSS"
     ],
     "url": null,
     "gitHub": "https://github.com/501ego/proyecto/tree/main",

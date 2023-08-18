@@ -8,16 +8,37 @@ import {
   Switch,
 } from '@nextui-org/react'
 import { MoonIcon, SunIcon, ConsoleIcon } from '../../public/icons'
+import { useTheme } from 'next-themes'
+import { gsap } from 'gsap'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+gsap.registerPlugin(ScrollToPlugin)
 
 export default function Nav() {
+  const { theme, setTheme } = useTheme()
+
+  const handleThemeChange = isSelected => {
+    setTheme(isSelected ? 'light' : 'dark')
+  }
+
+  const smoothScroll = (event, id) => {
+    event.preventDefault()
+    const element = document.getElementById(id)
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <Navbar
       shouldHideOnScroll
-      className="px-4 h-[55px] items-center justify-between"
+      isBlurred
+      maxWidth="full"
+      className="bg-zinc-900"
     >
       <NavbarBrand>
-        <div className="text-rose-300 fixed">
-          <p className="flex flex-row items-center text-lg font-semibold">
+        <div className="text-mainSubColor fixed">
+          <p className="row-center text-lg font-semibold">
             <span>
               <ConsoleIcon />
             </span>
@@ -26,39 +47,50 @@ export default function Nav() {
         </div>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4 py-2">
-        <NavbarItem className="hover:text-indigo-300 hover:border-b-2 hover:border-indigo-200">
-          <Link color="foreground" href="#">
+        <NavbarItem>
+          <a
+            onClick={event => smoothScroll(event, 'projects')}
+            href="#projects"
+            className="url-hover text-url hover:text-hover"
+          >
             Projects
-          </Link>
+          </a>
         </NavbarItem>
-        <NavbarItem className="hover:text-indigo-300 hover:border-b-2 hover:border-indigo-200">
-          <Link href="#" aria-current="page">
+        <NavbarItem>
+          <a
+            onClick={event => smoothScroll(event, 'skills')}
+            href="#skills"
+            className="url-hover text-url hover:text-hover"
+          >
+            Skills
+          </a>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            href="#"
+            aria-current="page"
+            className="url-hover text-url hover:text-hover"
+          >
             Resume
           </Link>
         </NavbarItem>
-        <NavbarItem className="hover:text-indigo-300 hover:border-b-2 hover:border-indigo-200">
-          <Link color="foreground" href="#">
-            Skills
-          </Link>
-        </NavbarItem>
       </NavbarContent>
-      <NavbarContent>
-        <NavbarItem className="flex-row flex gap-5 justify-center cursor-pointer">
-          <Switch
-            className="text-indigo-400 cursor-pointer hover:text-yellow-100"
-            defaultSelected
-            size="lg"
-            color="secondary"
-            thumbIcon={({ isSelected, className }) =>
-              isSelected ? (
-                <SunIcon className={className} />
-              ) : (
-                <MoonIcon className={className} />
-              )
-            }
-          ></Switch>
-        </NavbarItem>
-      </NavbarContent>
+      <NavbarItem>
+        <Switch
+          className="px-11"
+          size="lg"
+          color="primary"
+          checked={theme === 'light'}
+          onChange={e => handleThemeChange(e.target.checked)}
+          thumbIcon={({ isSelected, className }) =>
+            isSelected ? (
+              <SunIcon className={className} />
+            ) : (
+              <MoonIcon className={className} />
+            )
+          }
+        ></Switch>
+      </NavbarItem>
     </Navbar>
   )
 }

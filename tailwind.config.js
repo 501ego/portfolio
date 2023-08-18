@@ -1,4 +1,4 @@
-const { nextui } = require('@nextui-org/react')
+const { nextui } = require('@nextui-org/theme')
 
 /** @type {import('tailwindcss').Config} */
 
@@ -8,6 +8,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@nextui-org/theme/dist/components/(switch|chip|navbar).js',
   ],
   theme: {
     screens: {
@@ -19,7 +20,7 @@ module.exports = {
       lg: '1024px',
       lg2: '1035px',
       xl: '1280px',
-      '2xl': '1536px',
+      xxl: '1536px',
     },
     extend: {
       backgroundImage: {
@@ -33,17 +34,41 @@ module.exports = {
   plugins: [
     nextui({
       themes: {
-        light: {
-          colors: {
-            primary: '#f9fafb',
-          },
-        },
         dark: {
           colors: {
-            primary: '#27272a',
+            background: '#18181b',
+            foreground: '#eef2ff',
+            textPrimary: '#e0e7ff',
+            mainSubColor: '#fda4af',
+            primaryTitleColor: '#a5b4fc',
+            titleColor: '#fda4af',
+            subtitleColor: '#fecdd3',
+            shadow: '#171717',
+            chip: '#262626',
+            hover: '#fda4af',
+            url: '#f1f5f9',
           },
+
+          // Puedes definir layout, radius, borderWidth, etc., según sea necesario
+        },
+        light: {
+          colors: {
+            background: '#f9fafb',
+            foreground: '#0a0a0a',
+            textPrimary: '#18181b',
+            mainSubColor: '#fb7185',
+            primaryTitleColor: '#0284c7',
+            titleColor: '#111827',
+            subtitleColor: '#fda4af',
+            shadow: '#262626',
+            chip: 'none',
+            hover: '#fda4af',
+            url: '#f1f5f9',
+          },
+          // Puedes definir layout, radius, borderWidth, etc., según sea necesario
         },
       },
+      backdropBlur: true,
     }),
   ],
 }

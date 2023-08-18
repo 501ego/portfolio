@@ -1,41 +1,36 @@
 import React from 'react'
+
 export const MoonIcon = props => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    aria-hidden="true"
+    focusable="false"
+    height="1em"
+    role="presentation"
     viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+    width="1em"
+    {...props}
   >
-    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    <path
+      d="M21.53 15.93c-.16-.27-.61-.69-1.73-.49a8.46 8.46 0 01-1.88.13 8.409 8.409 0 01-5.91-2.82 8.068 8.068 0 01-1.44-8.66c.44-1.01.13-1.54-.09-1.76s-.77-.55-1.83-.11a10.318 10.318 0 00-6.32 10.21 10.475 10.475 0 007.04 8.99 10 10 0 002.89.55c.16.01.32.02.48.02a10.5 10.5 0 008.47-4.27c.67-.93.49-1.519.32-1.79z"
+      fill="currentColor"
+    />
   </svg>
 )
 
 export const SunIcon = props => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    aria-hidden="true"
+    focusable="false"
+    height="1em"
+    role="presentation"
     viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+    width="1em"
+    {...props}
   >
-    <circle cx="12" cy="12" r="4" />
-    <path d="M12 2v2" />
-    <path d="M12 20v2" />
-    <path d="m4.93 4.93 1.41 1.41" />
-    <path d="m17.66 17.66 1.41 1.41" />
-    <path d="M2 12h2" />
-    <path d="M20 12h2" />
-    <path d="m6.34 17.66-1.41 1.41" />
-    <path d="m19.07 4.93-1.41 1.41" />
+    <g fill="currentColor">
+      <path d="M19 12a7 7 0 11-7-7 7 7 0 017 7z" />
+      <path d="M12 22.96a.969.969 0 01-1-.96v-.08a1 1 0 012 0 1.038 1.038 0 01-1 1.04zm7.14-2.82a1.024 1.024 0 01-.71-.29l-.13-.13a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.984.984 0 01-.7.29zm-14.28 0a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a1 1 0 01-.7.29zM22 13h-.08a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zM2.08 13H2a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zm16.93-7.01a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a.984.984 0 01-.7.29zm-14.02 0a1.024 1.024 0 01-.71-.29l-.13-.14a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.97.97 0 01-.7.3zM12 3.04a.969.969 0 01-1-.96V2a1 1 0 012 0 1.038 1.038 0 01-1 1.04z" />
+    </g>
   </svg>
 )
 
@@ -74,7 +69,7 @@ export const LinkedinIcon = () => (
   </svg>
 )
 
-export const JavaScriptIcon = () => (
+export const JavaScript = () => (
   <svg
     stroke="currentColor"
     fill="#fbbf24"
@@ -89,7 +84,7 @@ export const JavaScriptIcon = () => (
   </svg>
 )
 
-export const PythonIcon = () => (
+export const Python = () => (
   <svg
     stroke="currentColor"
     fill="#fbbf24"
@@ -104,7 +99,7 @@ export const PythonIcon = () => (
   </svg>
 )
 
-export const NodeJsIcon = () => (
+export const NodeJs = () => (
   <svg
     stroke="currentColor"
     fill="#4d7c0f"
@@ -133,7 +128,7 @@ export const ReactIcon = () => (
   </svg>
 )
 
-export const AWSIcon = () => (
+export const AWS = () => (
   <svg
     stroke="currentColor"
     fill="#ca8a04"
@@ -148,7 +143,7 @@ export const AWSIcon = () => (
   </svg>
 )
 
-export const DjangoIcon = () => (
+export const Django = () => (
   <svg
     stroke="currentColor"
     fill="#022c22"
@@ -163,7 +158,7 @@ export const DjangoIcon = () => (
   </svg>
 )
 
-export const NextJsIcon = () => (
+export const NextJs = () => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -178,7 +173,7 @@ export const NextJsIcon = () => (
   </svg>
 )
 
-export const MongoDBIcon = () => (
+export const MongoDB = () => (
   <svg
     stroke="currentColor"
     fill="#15803d"
@@ -192,7 +187,7 @@ export const MongoDBIcon = () => (
     <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" />
   </svg>
 )
-export const MySqlIcon = () => (
+export const MySQL = () => (
   <svg
     stroke="currentColor"
     fill="#0c4a6e"
@@ -207,7 +202,7 @@ export const MySqlIcon = () => (
   </svg>
 )
 
-export const PostgreSQLIcon = () => (
+export const PostgreSQL = () => (
   <svg
     stroke="currentColor"
     fill="#0369a1"
@@ -222,7 +217,7 @@ export const PostgreSQLIcon = () => (
   </svg>
 )
 
-export const ExpressIcon = () => (
+export const Express = () => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -237,7 +232,7 @@ export const ExpressIcon = () => (
   </svg>
 )
 
-export const TailwindCSSIcon = () => (
+export const TailwindCSS = () => (
   <svg
     stroke="currentColor"
     fill="#38bdf8"
@@ -296,7 +291,6 @@ export const LeftArrowIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-chevron-left"
   >
     <path d="m15 18-6-6 6-6" />
   </svg>
@@ -313,7 +307,6 @@ export const RightArrowIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-chevron-right"
   >
     <path d="m9 18 6-6-6-6" />
   </svg>
@@ -330,7 +323,6 @@ export const CloseIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-x"
   >
     <path d="M18 6 6 18" />
     <path d="m6 6 12 12" />

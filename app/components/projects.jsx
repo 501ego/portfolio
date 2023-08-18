@@ -29,10 +29,7 @@ export default function Projects() {
 
   return (
     <section aria-label="project section">
-      <h1 className="text-4xl font-semibold text-center text-indigo-300 mt-20 mb-2">
-        Projects
-      </h1>
-      <article className="flex justify-center gap-6 flex-wrap">
+      <article className="flex justify-center gap-6 flex-wrap py-20">
         {projects.map((project, idx) => (
           <ProjectCard
             key={idx}
