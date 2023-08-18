@@ -88,7 +88,7 @@ export default function Nav() {
           color="primary"
           checked={theme === 'light'}
           onChange={e => handleThemeChange(e.target.checked)}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          aria-label="Toggle Theme"
           thumbIcon={({ isSelected, className }) =>
             isSelected ? (
               <SunIcon className={className} />
