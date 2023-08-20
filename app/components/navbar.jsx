@@ -72,7 +72,7 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="https://inacapmailcl-my.sharepoint.com/:b:/g/personal/diego_ormazabal02_inacapmail_cl/EQwWPBELtp9AgkkXcz5gPMcBWrvPGi0pmK6hzp4Tc-p9-Q?e=uimVhG"
             aria-current="page"
             className="url-hover text-url hover:text-hover"
             aria-label="Download Resume"
