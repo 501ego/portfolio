@@ -40,7 +40,7 @@ export default function MainSection() {
               </a>
               <a
                 className="hover:text-primaryTitleColor"
-                href="https://www.linkedin.com/in/diego-ormazábal-maldonado-b48499289"
+                href="https://www.linkedin.com/in/diego-ormazabal-maldonado"
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="LinkedIn profile"
