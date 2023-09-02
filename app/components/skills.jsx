@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section aria-label="skills section" className="max-w-6xl py-10">
+    <section aria-label="skills section" className="max-w-6xl mb-10">
       <header>
         <h1 className="sr-only">Skills</h1>
       </header>
@@ -9,12 +9,12 @@ export default function Skills() {
           aria-label="languages"
           className="mb-10 flex justify-center items-start flex-wrap"
         >
-          <ul className="flex flex-wrap max-w-md">
+          <ul className="flex flex-wrap max-w-2xl mdc2:max-w-md xl:max-w-xl">
             <li className="py-5 px-5">
               <h2 className="text-subtitleColor font-bold text-4xl flex justify-center py-2">
                 Technical Skills
               </h2>
-              <p className="text-base text-textPrimary mdc:mb-[24px]">
+              <p className="text-base text-textPrimary mdc:mb-[24px] xl:mb-0">
                 Pursuing studies in computer engineering has engaged me in the
                 rigorous acquisition and application of various technological
                 competencies, particularly in:
@@ -49,7 +49,7 @@ export default function Skills() {
               </p>
             </li>
           </ul>
-          <ul className="flex flex-wrap max-w-md">
+          <ul className="flex flex-wrap max-w-2xl mdc2:max-w-md xl:max-w-xl">
             <li className="py-5 px-5">
               <h2 className="text-subtitleColor font-bold text-4xl flex justify-center py-2">
                 Soft Skills
@@ -70,7 +70,7 @@ export default function Skills() {
                 precision, both in oral and written form.
               </p>
             </li>
-            <li className=" py-5 px-5">
+            <li className=" py-5 px-5 xl:py-0">
               <span className="text-mainSubColor font-bold text-2xl">
                 Research & Analysis:
               </span>
@@ -81,7 +81,7 @@ export default function Skills() {
               </p>
             </li>
           </ul>
-          <div className="col-center max-w-4xl">
+          <div className="col-center max-w-xl mdc2:max-w-3xl xl:max-w-5xl">
             <p className="text-base text-textPrimary p-3">
               My synthesis of these specialized soft and technical skills
               renders me a well-rounded professional, uniquely positioned to
