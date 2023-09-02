@@ -5,6 +5,7 @@ import Nav from './components/navbar'
 import Projects from './components/projects'
 import Skills from './components/skills'
 import IconsCarousel from './components/iconsCarousel'
+import Footer from './components/footer'
 import { useState } from 'react'
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
