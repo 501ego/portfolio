@@ -6,9 +6,9 @@ export default function Footer() {
   const handleCopyClick = async () => {
     try {
       await navigator.clipboard.writeText('diego.ormazabal.m@gmail.com')
-      toast.success('Correo copiado al portapapeles.')
+      toast.success('Email copied to clipboard')
     } catch (err) {
-      toast.error('No se pudo copiar el correo.')
+      toast.error('Failed to copy email to clipboard')
     }
   }
 
@@ -60,14 +60,14 @@ export default function Footer() {
                 target="_blank"
                 aria-label="LinkedIn profile"
               >
-                <span>Send Email</span>
+                <span>Send email</span>
               </Link>
               <button
                 className="hover:text-hover flex items-start text-sm text-textPrimary"
                 onClick={handleCopyClick}
                 aria-label="LinkedIn profile"
               >
-                <span>Copy Email</span>
+                <span>Copy email</span>
               </button>
               <ToastContainer />
             </div>
