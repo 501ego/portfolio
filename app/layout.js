@@ -1,6 +1,7 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
 import { Providers } from './providers'
+import { Analytics } from '@vercel/analytics/react'
 
 const poppins = Poppins({
   weight: ['400', '700'],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       {' '}
       <body className={poppins.className}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   )
