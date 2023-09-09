@@ -43,7 +43,8 @@ export const ProjectCard = ({
             <div className="flex flex-col items-center p-2">
               <ProjectImage
                 key={currentImageIndex}
-                image={project.images[currentImageIndex]}
+                image={project.smallImages[currentImageIndex]}
+                bigImage={project.images[currentImageIndex]}
                 nextSlide={nextSlide}
                 prevSlide={prevSlide}
                 alt={project.name}

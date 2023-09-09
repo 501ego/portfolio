@@ -6,6 +6,11 @@
       "./projects/libgenss2.webp",
       "./projects/libgenss3.webp"
     ],
+    "smallImages": [
+      "./projects/libgenss-small.webp",
+      "./projects/libgenss2-small.webp",
+      "./projects/libgenss3-small.webp"
+    ],
     "icons" : [
       "NodeJs",
       "JavaScript",
@@ -25,6 +30,11 @@
       "./projects/recipess2.webp",
       "./projects/recipess3.webp"
     ],
+    "smallImages": [
+      "./projects/recipess-small.webp",
+      "./projects/recipess2-small.webp",
+      "./projects/recipess3-small.webp"
+    ],
     "icons" : [
       "JavaScript",
       "React",
@@ -43,6 +53,11 @@
       "./projects/posss.webp",
       "./projects/posss2.webp",
       "./projects/posss3.webp"
+    ],
+    "smallImages": [
+      "./projects/posss-small.webp",
+      "./projects/posss2-small.webp",
+      "./projects/posss3-small.webp"
     ],
     "icons" : [
       "Python",

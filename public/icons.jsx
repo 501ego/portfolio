@@ -2,6 +2,7 @@ import React from 'react'
 
 export const MoonIcon = props => (
   <svg
+    alt="Moon Icon"
     aria-hidden="true"
     focusable="false"
     height="1em"
@@ -19,6 +20,7 @@ export const MoonIcon = props => (
 
 export const SunIcon = props => (
   <svg
+    alt="Sun Icon"
     aria-hidden="true"
     focusable="false"
     height="1em"
@@ -36,6 +38,7 @@ export const SunIcon = props => (
 
 export const GithubIcon = () => (
   <svg
+    alt="Github Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -53,6 +56,7 @@ export const GithubIcon = () => (
 
 export const LinkedinIcon = () => (
   <svg
+    alt="Linkedin Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -71,6 +75,7 @@ export const LinkedinIcon = () => (
 
 export const JavaScript = () => (
   <svg
+    alt="JavaScript Icon"
     stroke="currentColor"
     fill="#fbbf24"
     strokeWidth="0"
@@ -86,6 +91,7 @@ export const JavaScript = () => (
 
 export const Python = () => (
   <svg
+    alt="Python Icon"
     stroke="currentColor"
     fill="#fbbf24"
     strokeWidth="0"
@@ -101,6 +107,7 @@ export const Python = () => (
 
 export const NodeJs = () => (
   <svg
+    alt="Node.js"
     stroke="currentColor"
     fill="#4d7c0f"
     strokeWidth="0"
@@ -116,6 +123,7 @@ export const NodeJs = () => (
 
 export const ReactIcon = () => (
   <svg
+    alt="React Icon"
     stroke="currentColor"
     fill="#0ea5e9"
     strokeWidth="0"
@@ -130,6 +138,7 @@ export const ReactIcon = () => (
 
 export const AWS = () => (
   <svg
+    alt="AWS Icon"
     stroke="currentColor"
     fill="#ca8a04"
     strokeWidth="0"
@@ -145,6 +154,7 @@ export const AWS = () => (
 
 export const Django = () => (
   <svg
+    alt="Django Icon"
     stroke="currentColor"
     fill="#022c22"
     strokeWidth="0"
@@ -160,6 +170,7 @@ export const Django = () => (
 
 export const NextJs = () => (
   <svg
+    alt="Next.js Icon"
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
@@ -175,6 +186,7 @@ export const NextJs = () => (
 
 export const MongoDB = () => (
   <svg
+    alt="MongoDB Icon"
     stroke="currentColor"
     fill="#15803d"
     strokeWidth="0"
@@ -189,6 +201,7 @@ export const MongoDB = () => (
 )
 export const MySQL = () => (
   <svg
+    alt="MySQL Icon"
     stroke="currentColor"
     fill="#0c4a6e"
     strokeWidth="0"
@@ -204,6 +217,7 @@ export const MySQL = () => (
 
 export const PostgreSQL = () => (
   <svg
+    alt="PostgreSQL Icon"
     stroke="currentColor"
     fill="#0369a1"
     strokeWidth="0"
@@ -219,6 +233,7 @@ export const PostgreSQL = () => (
 
 export const Express = () => (
   <svg
+    alt="Express Icon"
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
@@ -234,6 +249,7 @@ export const Express = () => (
 
 export const TailwindCSS = () => (
   <svg
+    alt="TailwindCSS Icon"
     stroke="currentColor"
     fill="#38bdf8"
     strokeWidth="0"
@@ -248,6 +264,7 @@ export const TailwindCSS = () => (
 )
 export const ConsoleIcon = () => (
   <svg
+    alt="Console Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -265,6 +282,7 @@ export const ConsoleIcon = () => (
 
 export const UrlIcon = () => (
   <svg
+    alt="Url Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
@@ -282,6 +300,7 @@ export const UrlIcon = () => (
 
 export const LeftArrowIcon = () => (
   <svg
+    alt="Left Arrow Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -298,6 +317,7 @@ export const LeftArrowIcon = () => (
 
 export const RightArrowIcon = () => (
   <svg
+    alt="Right Arrow Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -314,6 +334,7 @@ export const RightArrowIcon = () => (
 
 export const CloseIcon = () => (
   <svg
+    alt="Close Icon"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"

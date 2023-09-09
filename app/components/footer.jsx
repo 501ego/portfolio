@@ -14,8 +14,8 @@ export default function Footer() {
 
   return (
     <footer className="flex justify-center border-t border-zinc-600">
-      <div className="flex flex-col px-11 py-5 max-w-6xl items-center w-full flex-wrap gap-3">
-        <section className="flex flex-row gap-8 justify-center flex-wrap">
+      <section className="flex flex-col px-11 py-5 max-w-6xl items-center w-full flex-wrap gap-3">
+        <article className="flex flex-row gap-8 justify-center flex-wrap">
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-bold text-subtitleColor">
               Information
@@ -72,12 +72,12 @@ export default function Footer() {
               <ToastContainer />
             </div>
           </div>
-        </section>
-        <p className="text-xs mt-5 flex flex-wrap gap-1">
+        </article>
+        <p className="text-sm mt-7 flex flex-wrap gap-1">
           Created by
           <span className="text-titleColor"> Diego Ormazábal M.</span> © 2023
         </p>
-      </div>
+      </section>
     </footer>
   )
 }

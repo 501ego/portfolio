@@ -2,7 +2,13 @@ import { Image } from '@nextui-org/react'
 import { LeftArrowIcon, RightArrowIcon } from '../../public/icons'
 import React, { useState } from 'react'
 
-const ProjectImage = ({ image, altDescription, prevSlide, nextSlide }) => {
+const ProjectImage = ({
+  image,
+  bigImage,
+  altDescription,
+  prevSlide,
+  nextSlide,
+}) => {
   const [showBigImage, setShowBigImage] = useState(false)
 
   const handleClick = () => {
@@ -14,16 +20,19 @@ const ProjectImage = ({ image, altDescription, prevSlide, nextSlide }) => {
   }
 
   return (
-    <div role="presentation" className="relative p-1 group">
+    <div aria-label="projects screenshots" className="relative p-1 group">
       <div
         onClick={handleClick}
         className="cursor-pointer max-h-[200px] min-h-[188px] min-w-[196px]"
       >
         <Image
-          loading="lazy"
+          aria-label="Project screenshot Small Image"
+          quality={40}
+          priority={false}
           alt={altDescription}
           src={image}
           width={320}
+          height={200}
           className="fadein border border-zinc-400 rounded-md min-h-[188px]"
         />
         <button
@@ -50,11 +59,14 @@ const ProjectImage = ({ image, altDescription, prevSlide, nextSlide }) => {
           aria-modal="true"
         >
           <Image
-            loading="lazy"
+            aria-label="Project screenshot Big Image"
+            quality={65}
+            priority={false}
             removeWrapper
             alt={altDescription}
-            className="max-w-[calc(75vw)] rounded-lg"
-            src={image}
+            src={bigImage}
+            width={1200}
+            height={890}
           />
         </div>
       )}

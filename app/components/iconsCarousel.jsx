@@ -19,20 +19,16 @@ export default function IconsCarousel() {
   }, [iconComponentsLength])
 
   return (
-    <div
+    <section
       aria-label="Carousel displaying various technologies I've worked with"
       className="relative mb-10 max-w-3xl mx-auto overflow-hidden"
-      role="complementary"
     >
       <div className="absolute top-0 bottom-0 w-10 bg-gradient-to-r from-background to-transparent"></div>
-      <div
-        className="icons-container flex whitespace-nowrap"
-        aria-label="Icons list of technologies"
-      >
+      <article className="icons-container flex whitespace-nowrap">
         <IconsList />
         <IconsList />
-      </div>
+      </article>
       <div className="absolute top-0 bottom-0 right-0 w-10 bg-gradient-to-l from-background to-transparent"></div>
-    </div>
+    </section>
   )
 }

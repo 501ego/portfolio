@@ -52,10 +52,13 @@ export default function MainSection() {
         </div>
         <div className="row-center mt-1">
           <Image
+            quality={65}
+            priority={true}
             alt="Portrait of Diego Ormazábal"
             className="object-cover rounded-[150px] border-2 border-background"
             src="./portrait6.webp"
             width={270}
+            height={270}
           />
         </div>
       </div>

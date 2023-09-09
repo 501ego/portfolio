@@ -30,12 +30,14 @@ export default function IconsList() {
   ]
 
   return (
-    <ul className="flex">
-      {iconComponents.map((IconComponent, index) => (
-        <li className="text-4xl text-center py-5 px-5" key={index}>
-          <IconComponent />
-        </li>
-      ))}
-    </ul>
+    <section>
+      <ul className="flex" aria-label="Technology icons">
+        {iconComponents.map((IconComponent, index) => (
+          <li className="text-4xl text-center py-5 px-5" key={index}>
+            <IconComponent />
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }
