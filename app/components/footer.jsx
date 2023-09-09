@@ -44,7 +44,7 @@ export default function Footer() {
                 href="https://inacapmailcl-my.sharepoint.com/:b:/g/personal/diego_ormazabal02_inacapmail_cl/EQwWPBELtp9AgkkXcz5gPMcBWrvPGi0pmK6hzp4Tc-p9-Q?e=uimVhG"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="LinkedIn profile"
+                aria-label="Resume"
               >
                 <span>Resume</span>
               </Link>
@@ -58,14 +58,14 @@ export default function Footer() {
                 href="mailto:diego.ormazabal.m@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="LinkedIn profile"
+                aria-label="Send email"
               >
                 <span>Send email</span>
               </Link>
               <button
                 className="hover:text-hover flex items-start text-sm text-textPrimary"
                 onClick={handleCopyClick}
-                aria-label="LinkedIn profile"
+                aria-label="Copy email"
               >
                 <span>Copy email</span>
               </button>
