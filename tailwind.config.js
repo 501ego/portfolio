@@ -23,13 +23,7 @@ module.exports = {
       xl: '1280px',
       xxl: '1536px',
     },
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+    extend: {},
   },
   darkMode: 'class',
   plugins: [
@@ -60,7 +54,7 @@ module.exports = {
             titleColor: '#f43f5e',
             subtitleColor: '#0284c7',
             shadow: '#262626',
-            chip: 'f9fafb',
+            chip: '#f9fafb',
             hover: '#fda4af',
             url: '#f1f5f9',
           },

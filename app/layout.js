@@ -12,13 +12,13 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Portfolio',
-  description: 'Designed and developed by me, using Next.js and TailwindCSS',
+  description:
+    'Designed and developed by Diego Ormazábal, using Next.js and TailwindCSS',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {' '}
       <body className={poppins.className}>
         <Providers>{children}</Providers>
         <Analytics />

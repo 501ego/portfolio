@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -11,11 +10,18 @@ import { MoonIcon, SunIcon, ConsoleIcon } from '../../public/icons'
 import { useTheme } from 'next-themes'
 import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+import { useState, useEffect } from 'react'
 
 gsap.registerPlugin(ScrollToPlugin)
-
 export default function Nav() {
   const { theme, setTheme } = useTheme()
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) return null
 
   const handleThemeChange = isSelected => {
     setTheme(isSelected ? 'light' : 'dark')
@@ -72,7 +78,7 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="https://inacapmailcl-my.sharepoint.com/:b:/g/personal/diego_ormazabal02_inacapmail_cl/EQwWPBELtp9AgkkXcz5gPMcBWrvPGi0pmK6hzp4Tc-p9-Q?e=uimVhG"
+            href="./resume/Diego-CV.pdf"
             aria-current="page"
             className="url-hover text-url hover:text-hover"
             aria-label="Download Resume"
@@ -86,7 +92,7 @@ export default function Nav() {
           className="px-11"
           size="lg"
           color="primary"
-          checked={theme === 'light'}
+          checked={theme === 'dark'}
           onChange={e => handleThemeChange(e.target.checked)}
           aria-label="Toggle Theme"
           thumbIcon={({ isSelected, className }) =>

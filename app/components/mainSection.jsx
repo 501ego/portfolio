@@ -1,4 +1,3 @@
-import React from 'react'
 import { Image } from '@nextui-org/react'
 import { GithubIcon, LinkedinIcon } from '../../public/icons'
 
@@ -53,7 +52,7 @@ export default function MainSection() {
         <div className="row-center mt-1">
           <Image
             quality={65}
-            priority={true}
+            priority="true"
             alt="Portrait of Diego Ormazábal"
             className="object-cover rounded-[150px] border-2 border-background"
             src="./portrait6.webp"
