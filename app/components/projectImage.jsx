@@ -25,16 +25,17 @@ const ProjectImage = ({
         onClick={handleClick}
         className="cursor-pointer max-h-[200px] min-h-[188px] min-w-[196px]"
       >
-        <Image
-          aria-label="Project screenshot Small Image"
-          quality={40}
-          priority={false}
-          alt={altDescription}
-          src={image}
-          width={320}
-          height={200}
-          className="fadein border border-zinc-400 rounded-md min-h-[188px]"
-        />
+        <div className="fadein border border-zinc-400 rounded-mdcursor-pointer max-h-[200px] min-h-[188px] min-w-[196px]">
+          <Image
+            aria-label="Project screenshot Small Image"
+            quality={40}
+            priority="false"
+            alt={altDescription}
+            src={image}
+            width={320}
+            height={200}
+          />
+        </div>
         <button
           onClick={prevSlide}
           className="z-50 hidden group-hover:block absolute top-[50%] translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
@@ -58,16 +59,17 @@ const ProjectImage = ({
           className="fixed inset-0 col-center bg-black bg-opacity-50 z-50"
           aria-modal="true"
         >
-          <Image
-            aria-label="Project screenshot Big Image"
-            quality={65}
-            priority={false}
-            removeWrapper
-            alt={altDescription}
-            src={bigImage}
-            width={1200}
-            height={890}
-          />
+          <div className="border border-zinc-400 rounded-md">
+            <Image
+              aria-label="Project screenshot Big Image"
+              quality={65}
+              priority="false"
+              alt={altDescription}
+              src={bigImage}
+              width={1200}
+              height={890}
+            />
+          </div>
         </div>
       )}
     </div>

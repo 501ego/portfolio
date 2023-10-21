@@ -6,19 +6,16 @@ import Projects from './components/projects'
 import Skills from './components/skills'
 import IconsCarousel from './components/iconsCarousel'
 import Footer from './components/footer'
-import { useState } from 'react'
 
 export default function Home() {
-  const [isEnglish, setIsEnglish] = useState(true)
-
   return (
-    <div className="w-full min-h-screen overflow-x-hidden scroll-smooth">
-      <Nav setIsEnglish={setIsEnglish} />
-      <main
+    <main className="w-full min-h-screen overflow-x-hidden scroll-smooth">
+      <Nav />
+      <section
         aria-label="main content"
         className="flex items-center m-auto max-w-full background-svg"
       >
-        <div className="flex flex-col justify-center items-center w-full">
+        <article className="flex flex-col justify-center items-center w-full">
           <div className="flex justify-center min-h-[680px] w-full">
             <MainSection />
           </div>
@@ -37,9 +34,9 @@ export default function Home() {
           <div className="flex flex-row justify-center w-full">
             <IconsCarousel />
           </div>
-        </div>
-      </main>
+        </article>
+      </section>
       <Footer />
-    </div>
+    </main>
   )
 }
