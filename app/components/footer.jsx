@@ -41,10 +41,10 @@ export default function Footer() {
               </Link>
               <Link
                 className="hover:text-hover text-sm text-textPrimary"
-                href="https://inacapmailcl-my.sharepoint.com/:b:/g/personal/diego_ormazabal02_inacapmail_cl/EQwWPBELtp9AgkkXcz5gPMcBWrvPGi0pmK6hzp4Tc-p9-Q?e=uimVhG"
+                href="./resume/Diego-CV.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Resume"
+                aria-label="Download Resume"
               >
                 <span>Resume</span>
               </Link>
