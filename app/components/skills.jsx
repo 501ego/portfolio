@@ -26,7 +26,8 @@ export default function Skills() {
               </span>
               <p className="text-base text-textPrimary">
                 Programming Accomplished in the MERN stack (MongoDB, Express.js,
-                React, Node.js), Python, Django, and PostgreSQL.
+                React, Node.js), Python, Django, Java, JavaScript, C# and
+                PostgreSQL.
               </p>
             </li>
             <li className=" py-5 px-5">
@@ -75,9 +76,9 @@ export default function Skills() {
                 Research & Analysis:
               </span>
               <p className="text-base text-textPrimary">
-                Research & Analysis: Well-versed in scientific research
-                methodologies, exercising critical analysis, and translating
-                intricate data into meaningful and actionable insights.
+                Well-versed in scientific research methodologies, exercising
+                critical analysis, and translating intricate data into
+                meaningful and actionable insights.
               </p>
             </li>
           </ul>
